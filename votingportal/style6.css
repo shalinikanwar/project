@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    border: 6px solid rgb(3, 51, 83);
+    
+    
+}
+.containeri{
+    border: 2px solid rgb(3, 51, 83);
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.btn{
+    background-color: rgb(54, 152, 218);
+    border: 2px solid rgb(1, 20, 37);
+    font-weight: 600;
+    width: 30%;
+    max-width: 30%;
+}
+.btn:hover{
+    background-color:rgb(8, 189, 47);
+    border: 2px solid black;
+}
+.col-md-6{
+    background-color: #E4BCFE;
+}
+.a{
+    background-color: green;
+}

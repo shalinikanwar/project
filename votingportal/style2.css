@@ -1,0 +1,57 @@
+
+.col-md-7{
+    border: 4px solid yellowgreen;
+    background-color: rgb(213, 172, 221);
+}
+body{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.eventss{
+    overflow: auto;
+    padding-left:40%;
+    padding-right:30%;
+}
+.container{
+    overflow: auto;
+    min-height: 96px;
+
+}
+.carousel{
+    min-height: 212px;
+}
+
+.carousel-inner{
+    min-height: 96px;
+}
+carousel-inner{
+    min-height: 96px;
+}
+.carousel-item img{
+    min-height: 200px;
+    min-width: 50px;
+}
+.row{
+    padding-left:10%;
+    padding-right:10%;  
+}
+.meet{
+    padding-left:30%;
+    padding-right:10%;
+    
+}
+.meet h1{
+    font-weight: 500;
+    color: rgb(10, 1, 19);
+    
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 44%;
+    right: 41%;
+    border: 3px solid #f1f1f1;
+    z-index: 4;
+  }
+  

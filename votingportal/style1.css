@@ -1,0 +1,21 @@
+body{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.btn{
+    background-color: rgb(54, 152, 218);
+    border: 2px solid rgb(1, 20, 37);
+}
+.container{
+    border: 6px solid rgb(3, 51, 83);
+    
+    
+}
+.accordion-item{
+    background-color: rgb(21, 142, 212);
+}
+.btn:hover{
+    background-color:rgb(8, 189, 47);
+    border: 2px solid black;
+}

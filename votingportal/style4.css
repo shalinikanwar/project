@@ -1,0 +1,38 @@
+.container{
+    border: 6px solid rgb(3, 51, 83);
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn{
+    background-color: rgb(54, 152, 218);
+    border: 2px solid rgb(1, 20, 37);
+    font-weight: 600;
+    width: 30%;
+    max-width: 30%;
+    font-size: calc(1vw+0.5em);
+    
+    
+}
+body{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.container2{
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    width: 70%;
+    max-width: 70%;
+    
+}
+.col-md-7{
+    padding: 2px 50px 2px 90px;
+}
+.btn:hover{
+    background-color:rgb(8, 189, 47);
+    border: 2px solid black;
+}

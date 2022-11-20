@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../votingportal/style4.css">
+    <title>nomination</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <a class="nav-link disabled" href="#">Home</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="page" href="../votingportal/login.html">log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Be with us
+                        </a>
+                        <ul class="dropdown-menu diabled" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item disabled" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item disabled" href="contactus.html">Contact us</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Invite friends</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Vote here</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../votingportal/nomination5.html">File nomination</a>
+                      </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="../votingportal/nomination5.html">File nomination</a>
+                      </li> -->
+                </ul>
+                <form class="d-flex" action="search.php" method="get">
+                    <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button name="submit" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form name="nomsp" onsubmit="return validateform()" method="post" enctype="multipart/form-data">
+            <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5  text-uppercase"> registration</h3>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+
+                                <label class="form-label" for="fn">First name</label>
+                                <input type="text" required name="fn" class="form-control form-control-lg">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+
+                                <label class="form-label" for="ln">Last name</label>
+                                <input type="text" name="ln" class="form-control form-control-lg">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+
+                                <label class="form-label" for="form3Example1n">Email</label>
+                                <input type="text" required name="Email" id="form3Example1n" class="form-control form-control-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+
+                                <label class="form-label" for="form3Example1n1">Enrollment number</label>
+                                <input type="text" required name="enrollment" id="form3Example1n1" class="form-control form-control-lg">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h7 class="mb-0 me-4">Gender:
+                        <div class="form-check form-check-inline mb-0 me-4 ">
+                            <input class="form-check-input" type="radio" name="Gender" value ="Female" id="flexRadioDefault2">
+                            <label class="form-check-label " for="femaleGender">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline mb-0 me-4">
+                            <input class="form-check-input" type="radio" name="Gender" value ="Male" id="flexRadioDefault2">
+                            <label class="form-check-label">Male</label>
+                        </div>
+
+                        <div class="form-check form-check-inline mb-0">
+                            <input class="form-check-input" type="radio" name="Gender" value ="Other" id="flexRadioDefault2">
+                            <label class="form-check-label" for="otherGender">Other</label>
+                        </div>
+                    </h7>
+                    <br><br>
+                    <div id="imagepart">
+                        Upload image:(student id)<input type ="file"name ="photo">
+                    </div>
+                </div>
+            <div>
+                <button type="submit" class="btn"  formaction="../votingportal/Candidate_Nomination5.php"value="submit"> Register as candidate</button>
+            
+             </div>
+            </form>
+            </div>
+        </form>
+     <!-- <table class="table table-dark table-striped">
+            <h3 class="mb-5  text-uppercase my-4">Other Nominees</h3>
+
+            <thead>
+                <tr>
+                    <th scope="col">Enrollment No.</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr> 
+   
+            </body>
+        </table> -->
+
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script>
+function validateform() {
+    var firstname = document.nomsp.fn.value;
+            var lastname = document.nomsp.ln.value;
+            var regfname = /^[a-zA-Z]+$/;
+            if (!firstname.match(regfname)) {
+                alert("Not a valid name");
+                return false;
+            }
+            if (!lastname.match(regfname)) {
+                alert("Not a valid last name");
+                return false;
+            }
+
+
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
